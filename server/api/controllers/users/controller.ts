@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
-import sequelize from '../../db/connection';
+// import sequelize from '../../db/connection';
 const { QueryTypes } = require('sequelize');
 import SetResponse from '../../response/response.helper';
 import * as Interfaces from '../../interfaces';

@@ -2,7 +2,7 @@
 import dotenv from 'dotenv';
 dotenv.config();
 export default {
-  RUNNING_PORT: parseInt(process.env.PORT || '3002'),
+  RUNNING_PORT: parseInt(process.env.PORT || '30022'),
   GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID,
   SENTRY_DSN: process.env.SENTRY_DSN,
   RABBITMQ_HOST: process.env.RABBITMQ_HOST || "amqp://guest:guest@localhost",
@@ -11,7 +11,7 @@ export default {
     NFT_CONTAINER_PORT: process.env.NFT_PORT,
     ADMIN_CONTAINER_NAME: process.env.ADMIN_CONTAINER,
     ADMIN_CONTAINER_PORT: process.env.ADMIN_PORT,
-    CONTAINER_PORT_GRPC: process.env.CONTAINER_PORT_GRPC,
+    CONTAINER_PORT_GRPC: process.env.CONTAINER_PORT_GRPC || '3002',
     CONTAINER_NAME_GRPC: process.env.CONTAINER_NAME_GRPC,
   },
   MYSQLDB: {
