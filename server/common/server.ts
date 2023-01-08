@@ -10,12 +10,12 @@ import CONFIG from '../api/config';
 // import * as Sentry from '@sentry/node';
 // import * as Tracing from '@sentry/tracing';
 import errorHandler from '../api/middlewares/error.handler';
-import helmet from 'helmet';
+// import helmet from 'helmet';
 import * as swaggerUi from 'swagger-ui-express';
 // import * as swaggerDocument from '../swagger.json';
 
 const app = express();
-app.use(helmet());
+// app.use(helmet());
 app.get('/users/status', (_req: any, res: any) => {
   console.log('status sucess');
   //return res.send(JSON.stringify({ status: 'Success' }));

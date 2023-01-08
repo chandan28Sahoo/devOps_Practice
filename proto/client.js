@@ -1,8 +1,8 @@
-const grpc = require('@grpc/grpc-js');
-const protoLoader = require('@grpc/proto-loader');
-const path = require('path');
-const CONFIG = require('../server/api/config/index');
-const GRPC_CONFIG = CONFIG.default;
+// const grpc = require('@grpc/grpc-js');
+// const protoLoader = require('@grpc/proto-loader');
+// const path = require('path');
+// const CONFIG = require('../server/api/config/index');
+// const GRPC_CONFIG = CONFIG.default;
 
 // Nft Client Connection
 // const NFT_PROTO_PATH = path.join(__dirname + '/nft.proto');

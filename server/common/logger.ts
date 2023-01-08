@@ -5,10 +5,10 @@ let date = today.getFullYear()+'_'+(today.getMonth()+1)+'_'+today.getDate();
 const l = pino({
   // name: CONFIG.API.ID,
   level: CONFIG.API.LOG_LEVEL,
-  prettyPrint: {
-    colorize: true,
-    translateTime: "yyyy-dd-mm, h:MM:ss TT",
-  }
+  // prettyPrint: {
+  //   colorize: true,
+  //   translateTime: "yyyy-dd-mm, h:MM:ss TT",
+  // }
 });
 
 export default l;
