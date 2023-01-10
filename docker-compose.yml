@@ -1,22 +1,10 @@
-#version: "3.3"
-#services:
-    mysql:
-    image: mysql:8.0.19
+version: "3.3"
+services:
+  user_s:
+    restart: always
+    container_name: user_c
+    build: ./devOps_Practice
     ports:
-      - "3306:3306"
-    volumes:
-      - db-data:/var/lib/mysql:rw
-    environment:
-      MYSQL_ROOT_PASSWORD: 123456
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin:5.0.2
-    ports:
-      - "8111:80"
-    environment:
-      PMA_HOST: mysql
-    depends_on:
-      - mysql
-    web:
-      build: .
-      ports:
-          - "3000:3000"
+      - "0.0.0.0:3000:3000"  
+    env_file: ./env/user.env
+
